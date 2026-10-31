@@ -14,7 +14,7 @@
 // pushing to the stack is fater than allocating on the heap beacause the allocator never has to search for a place to store new data -> that location is always at the top of the stack
 
 fn main() { // is not valid here
-    let mut s = String::from("hello"); // is valid from this point forward
+    let s = String::from("hello"); // is valid from this point forward
 
     let s2 = &s; //no problem // add s2 to point for same memory of s, costs less memory ?
 
